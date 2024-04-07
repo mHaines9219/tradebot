@@ -59,10 +59,12 @@ class MLTrader(Strategy):
 
     def on_trading_iteration(self):
         cash, last_price, quantity = self.position_sizing()
+        probability, sentiment = self.get_sentiment()
+
         if cash > last_price:
-            if self.last_trade == None:
-                probability, sentiment = self.get_sentiment()
-                print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", probability, sentiment)
+            if sentiment == "positive" and probability > 0.9:
+                if self.last_trade == "sell":
+                    self.sell_all()
                 order = self.create_order(
                     self.symbol,
                     quantity,
@@ -74,8 +76,22 @@ class MLTrader(Strategy):
                 self.submit_order(order)
                 self.last_trade = "buy"
 
+            elif sentiment == "negative" and probability > 0.9:
+                if self.last_trade == "buy":
+                    self.sell_all()
+                order = self.create_order(
+                    self.symbol,
+                    quantity,
+                    "sell",
+                    type="bracket",
+                    take_profit_price=last_price * 0.8,
+                    stop_loss_price=last_price * 1.05,
+                )
+                self.submit_order(order)
+                self.last_trade = "sell"
 
-start_date = datetime(2023, 12, 15)
+
+start_date = datetime(2021, 12, 15)
 end_date = datetime(2023, 12, 31)
 
 broker = Alpaca(ALPACA_CREDS)
