@@ -1,0 +1,5 @@
+2024-04-06 21:46:15,838: asyncio: INFO: [MLTrader] Executing the initialize lifecycle method
+2024-04-06 21:46:15,841: root: INFO: Backtesting finished
+2024-04-06 21:46:16,428: asyncio: WARNING: [MLTrader] Cannot plot returns because the strategy returns are missing
+2024-04-06 21:46:16,483: asyncio: WARNING: [MLTrader] Cannot create a tearsheet because the strategy returns are missing
+2024-04-06 21:46:16,484: backtest_stats: INFO: Backtest took 0:00:00.646371 for a speed of 0.000

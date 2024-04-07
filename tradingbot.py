@@ -3,7 +3,8 @@ from lumibot.backtesting import YahooDataBacktesting
 from lumibot.strategies.strategy import Strategy
 from lumibot.traders import Trader
 from alpaca_trade_api import REST
-from timedelta import timedelta
+
+from timedelta import Timedelta
 
 from datetime import datetime
 from dotenv import load_dotenv
@@ -41,17 +42,21 @@ class MLTrader(Strategy):
     def get_dates(self):
         # get date in reference to  backtest
         today = self.get_datetime()
-        three_days_prior = today - timedelta(days=3)
+        three_days_prior = today - Timedelta(days=3)
         return today.strftime("%Y-%m-%d"), three_days_prior.strftime("%Y-%m-%d")
 
-    def get_the_news(self):
+    def get_news(self):
         today, three_days_prior = self.get_dates()
-        news = self.api.get_news(symbol=self.symbol, start=today, end=three_days_prior)
+        news = self.api.get_news(symbol=self.symbol, start=three_days_prior, end=today)
+        news = [ev.__dict__["_raw"]["headline"] for ev in news]
+        return news
 
     def on_trading_iteration(self):
         cash, last_price, quantity = self.position_sizing()
         if cash > last_price:
             if self.last_trade == None:
+                news = self.get_news()
+                print(news)
                 order = self.create_order(
                     self.symbol,
                     quantity,

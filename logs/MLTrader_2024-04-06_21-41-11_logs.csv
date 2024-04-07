@@ -1,0 +1,258 @@
+2024-04-06 21:41:11,532: asyncio: INFO: [MLTrader] Executing the initialize lifecycle method
+2024-04-06 21:41:12,654: root: INFO: Current backtesting datetime 2023-12-15 08:30:00-05:00
+2024-04-06 21:41:12,655: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:41:12,656: root: INFO: Current backtesting datetime 2023-12-15 09:30:00-05:00
+2024-04-06 21:41:12,656: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:41:12,657: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:41:12[0m
+2024-04-06 21:41:12,657: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:12,663: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:12,663: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: 'MLTrader' object has no attribute 'get_news'[0m
+2024-04-06 21:41:12,664: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 58, in on_trading_iteration
+    news = self.get_news()
+           ^^^^^^^^^^^^^
+AttributeError: 'MLTrader' object has no attribute 'get_news'
+[0m
+2024-04-06 21:41:12,664: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:41:12,666: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:41:12,666: root: INFO: Current backtesting datetime 2023-12-15 16:00:00-05:00
+2024-04-06 21:41:12,666: root: INFO: Current backtesting datetime 2023-12-16 09:30:00-05:00
+2024-04-06 21:41:12,667: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:41:12,668: root: INFO: Current backtesting datetime 2023-12-16 09:29:00-05:00
+2024-04-06 21:41:12,669: root: INFO: Current backtesting datetime 2023-12-16 09:29:00-05:00
+2024-04-06 21:41:12,669: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:41:12,670: root: INFO: Current backtesting datetime 2023-12-18 08:30:00-05:00
+2024-04-06 21:41:12,671: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:41:12,672: root: INFO: Current backtesting datetime 2023-12-18 09:30:00-05:00
+2024-04-06 21:41:12,672: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:41:12,673: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:41:12[0m
+2024-04-06 21:41:12,673: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:12,674: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:12,675: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: 'MLTrader' object has no attribute 'get_news'[0m
+2024-04-06 21:41:12,675: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 58, in on_trading_iteration
+    news = self.get_news()
+           ^^^^^^^^^^^^^
+AttributeError: 'MLTrader' object has no attribute 'get_news'
+[0m
+2024-04-06 21:41:12,675: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:41:13,562: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:41:13,563: root: INFO: Current backtesting datetime 2023-12-18 16:00:00-05:00
+2024-04-06 21:41:13,563: root: INFO: Current backtesting datetime 2023-12-19 09:30:00-05:00
+2024-04-06 21:41:13,563: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:41:13[0m
+2024-04-06 21:41:13,563: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:13,564: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:13,565: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: 'MLTrader' object has no attribute 'get_news'[0m
+2024-04-06 21:41:13,565: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 58, in on_trading_iteration
+    news = self.get_news()
+           ^^^^^^^^^^^^^
+AttributeError: 'MLTrader' object has no attribute 'get_news'
+[0m
+2024-04-06 21:41:13,565: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:41:13,992: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:41:13,992: root: INFO: Current backtesting datetime 2023-12-19 16:00:00-05:00
+2024-04-06 21:41:13,993: root: INFO: Current backtesting datetime 2023-12-20 09:30:00-05:00
+2024-04-06 21:41:13,993: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:41:13[0m
+2024-04-06 21:41:13,993: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:13,994: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:13,994: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: 'MLTrader' object has no attribute 'get_news'[0m
+2024-04-06 21:41:13,995: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 58, in on_trading_iteration
+    news = self.get_news()
+           ^^^^^^^^^^^^^
+AttributeError: 'MLTrader' object has no attribute 'get_news'
+[0m
+2024-04-06 21:41:13,995: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:41:14,347: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:41:14,348: root: INFO: Current backtesting datetime 2023-12-20 16:00:00-05:00
+2024-04-06 21:41:14,348: root: INFO: Current backtesting datetime 2023-12-21 09:30:00-05:00
+2024-04-06 21:41:14,348: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:41:14[0m
+2024-04-06 21:41:14,348: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:14,349: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:14,349: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: 'MLTrader' object has no attribute 'get_news'[0m
+2024-04-06 21:41:14,350: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 58, in on_trading_iteration
+    news = self.get_news()
+           ^^^^^^^^^^^^^
+AttributeError: 'MLTrader' object has no attribute 'get_news'
+[0m
+2024-04-06 21:41:14,350: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:41:14,733: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:41:14,734: root: INFO: Current backtesting datetime 2023-12-21 16:00:00-05:00
+2024-04-06 21:41:14,734: root: INFO: Current backtesting datetime 2023-12-22 09:30:00-05:00
+2024-04-06 21:41:14,735: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:41:14[0m
+2024-04-06 21:41:14,735: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:14,736: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:14,736: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: 'MLTrader' object has no attribute 'get_news'[0m
+2024-04-06 21:41:14,736: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 58, in on_trading_iteration
+    news = self.get_news()
+           ^^^^^^^^^^^^^
+AttributeError: 'MLTrader' object has no attribute 'get_news'
+[0m
+2024-04-06 21:41:14,736: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:41:14,995: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:41:14,996: root: INFO: Current backtesting datetime 2023-12-22 16:00:00-05:00
+2024-04-06 21:41:14,996: root: INFO: Current backtesting datetime 2023-12-23 09:30:00-05:00
+2024-04-06 21:41:14,996: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:41:14,998: root: INFO: Current backtesting datetime 2023-12-23 09:29:00-05:00
+2024-04-06 21:41:14,999: root: INFO: Current backtesting datetime 2023-12-23 09:29:00-05:00
+2024-04-06 21:41:14,999: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:41:14,999: root: INFO: Current backtesting datetime 2023-12-26 08:30:00-05:00
+2024-04-06 21:41:15,000: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:41:15,001: root: INFO: Current backtesting datetime 2023-12-26 09:30:00-05:00
+2024-04-06 21:41:15,001: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:41:15,002: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:41:15[0m
+2024-04-06 21:41:15,002: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:15,003: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:15,003: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: 'MLTrader' object has no attribute 'get_news'[0m
+2024-04-06 21:41:15,004: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 58, in on_trading_iteration
+    news = self.get_news()
+           ^^^^^^^^^^^^^
+AttributeError: 'MLTrader' object has no attribute 'get_news'
+[0m
+2024-04-06 21:41:15,004: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:41:15,584: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:41:15,585: root: INFO: Current backtesting datetime 2023-12-26 16:00:00-05:00
+2024-04-06 21:41:15,585: root: INFO: Current backtesting datetime 2023-12-27 09:30:00-05:00
+2024-04-06 21:41:15,586: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:41:15[0m
+2024-04-06 21:41:15,586: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:15,587: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:15,587: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: 'MLTrader' object has no attribute 'get_news'[0m
+2024-04-06 21:41:15,588: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 58, in on_trading_iteration
+    news = self.get_news()
+           ^^^^^^^^^^^^^
+AttributeError: 'MLTrader' object has no attribute 'get_news'
+[0m
+2024-04-06 21:41:15,588: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:41:15,797: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:41:15,798: root: INFO: Current backtesting datetime 2023-12-27 16:00:00-05:00
+2024-04-06 21:41:15,798: root: INFO: Current backtesting datetime 2023-12-28 09:30:00-05:00
+2024-04-06 21:41:15,798: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:41:15[0m
+2024-04-06 21:41:15,799: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:15,799: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:15,800: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: 'MLTrader' object has no attribute 'get_news'[0m
+2024-04-06 21:41:15,800: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 58, in on_trading_iteration
+    news = self.get_news()
+           ^^^^^^^^^^^^^
+AttributeError: 'MLTrader' object has no attribute 'get_news'
+[0m
+2024-04-06 21:41:15,800: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:41:16,007: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:41:16,008: root: INFO: Current backtesting datetime 2023-12-28 16:00:00-05:00
+2024-04-06 21:41:16,008: root: INFO: Current backtesting datetime 2023-12-29 09:30:00-05:00
+2024-04-06 21:41:16,008: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:41:16[0m
+2024-04-06 21:41:16,009: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:16,009: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:41:16,010: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: 'MLTrader' object has no attribute 'get_news'[0m
+2024-04-06 21:41:16,010: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 58, in on_trading_iteration
+    news = self.get_news()
+           ^^^^^^^^^^^^^
+AttributeError: 'MLTrader' object has no attribute 'get_news'
+[0m
+2024-04-06 21:41:16,010: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:41:16,738: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:41:16,738: root: INFO: Current backtesting datetime 2023-12-29 16:00:00-05:00
+2024-04-06 21:41:16,739: root: INFO: Current backtesting datetime 2023-12-30 09:30:00-05:00
+2024-04-06 21:41:16,739: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:41:16,740: root: INFO: Current backtesting datetime 2023-12-30 09:29:00-05:00
+2024-04-06 21:41:16,741: root: INFO: Current backtesting datetime 2023-12-30 09:29:00-05:00
+2024-04-06 21:41:16,742: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:41:16,742: root: INFO: Current backtesting datetime 2024-01-02 08:30:00-05:00
+2024-04-06 21:41:16,743: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:41:16,744: root: INFO: Current backtesting datetime 2024-01-02 09:30:00-05:00
+2024-04-06 21:41:16,744: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:41:16,745: root: INFO: Current backtesting datetime 2024-01-02 15:59:00-05:00
+2024-04-06 21:41:16,746: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-04-06 21:41:16,747: root: INFO: Current backtesting datetime 2024-01-02 16:00:00-05:00
+2024-04-06 21:41:16,747: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:41:16,747: asyncio: INFO: [MLTrader] Executing the on_strategy_end lifecycle method
+2024-04-06 21:41:16,955: root: INFO: Backtesting finished
+2024-04-06 21:41:17,074: root: INFO: There were no trades in this backtest.
+2024-04-06 21:41:17,415: root: ERROR: Not enough data to create a tearsheet, at least 2 days of data are required. Skipping
+2024-04-06 21:41:17,415: backtest_stats: INFO: Backtest took 0:00:05.884619 for a speed of 0.000

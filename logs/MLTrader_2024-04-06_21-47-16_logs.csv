@@ -1,0 +1,2063 @@
+2024-04-06 21:47:16,024: asyncio: INFO: [MLTrader] Executing the initialize lifecycle method
+2024-04-06 21:47:17,191: root: INFO: Current backtesting datetime 2020-01-02 08:30:00-05:00
+2024-04-06 21:47:17,192: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:17,193: root: INFO: Current backtesting datetime 2020-01-02 09:30:00-05:00
+2024-04-06 21:47:17,193: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:17,194: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:17[0m
+2024-04-06 21:47:17,194: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:17,199: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:17,431: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:17,433: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:17,433: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:17,434: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:17,435: root: INFO: Current backtesting datetime 2020-01-02 16:00:00-05:00
+2024-04-06 21:47:17,435: root: INFO: Current backtesting datetime 2020-01-03 09:30:00-05:00
+2024-04-06 21:47:17,436: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:17[0m
+2024-04-06 21:47:17,436: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:17,438: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:17,469: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:17,470: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:17,470: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:18,336: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:18,337: root: INFO: Current backtesting datetime 2020-01-03 16:00:00-05:00
+2024-04-06 21:47:18,337: root: INFO: Current backtesting datetime 2020-01-04 09:30:00-05:00
+2024-04-06 21:47:18,338: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:18,339: root: INFO: Current backtesting datetime 2020-01-04 09:29:00-05:00
+2024-04-06 21:47:18,340: root: INFO: Current backtesting datetime 2020-01-04 09:29:00-05:00
+2024-04-06 21:47:18,340: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:18,341: root: INFO: Current backtesting datetime 2020-01-06 08:30:00-05:00
+2024-04-06 21:47:18,342: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:18,343: root: INFO: Current backtesting datetime 2020-01-06 09:30:00-05:00
+2024-04-06 21:47:18,343: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:18,344: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:18[0m
+2024-04-06 21:47:18,344: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:18,345: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:18,374: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:18,375: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:18,375: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:18,762: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:18,763: root: INFO: Current backtesting datetime 2020-01-06 16:00:00-05:00
+2024-04-06 21:47:18,763: root: INFO: Current backtesting datetime 2020-01-07 09:30:00-05:00
+2024-04-06 21:47:18,764: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:18[0m
+2024-04-06 21:47:18,764: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:18,765: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:18,797: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:18,797: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:18,798: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:19,016: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:19,017: root: INFO: Current backtesting datetime 2020-01-07 16:00:00-05:00
+2024-04-06 21:47:19,017: root: INFO: Current backtesting datetime 2020-01-08 09:30:00-05:00
+2024-04-06 21:47:19,017: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:19[0m
+2024-04-06 21:47:19,017: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:19,018: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:19,052: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:19,052: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:19,052: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:19,650: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:19,650: root: INFO: Current backtesting datetime 2020-01-08 16:00:00-05:00
+2024-04-06 21:47:19,651: root: INFO: Current backtesting datetime 2020-01-09 09:30:00-05:00
+2024-04-06 21:47:19,651: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:19[0m
+2024-04-06 21:47:19,651: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:19,652: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:19,680: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:19,680: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:19,680: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:19,923: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:19,924: root: INFO: Current backtesting datetime 2020-01-09 16:00:00-05:00
+2024-04-06 21:47:19,924: root: INFO: Current backtesting datetime 2020-01-10 09:30:00-05:00
+2024-04-06 21:47:19,924: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:19[0m
+2024-04-06 21:47:19,924: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:19,925: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:19,955: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:19,955: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:19,955: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:20,328: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:20,329: root: INFO: Current backtesting datetime 2020-01-10 16:00:00-05:00
+2024-04-06 21:47:20,329: root: INFO: Current backtesting datetime 2020-01-11 09:30:00-05:00
+2024-04-06 21:47:20,330: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:20,331: root: INFO: Current backtesting datetime 2020-01-11 09:29:00-05:00
+2024-04-06 21:47:20,332: root: INFO: Current backtesting datetime 2020-01-11 09:29:00-05:00
+2024-04-06 21:47:20,332: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:20,333: root: INFO: Current backtesting datetime 2020-01-13 08:30:00-05:00
+2024-04-06 21:47:20,334: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:20,334: root: INFO: Current backtesting datetime 2020-01-13 09:30:00-05:00
+2024-04-06 21:47:20,334: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:20,336: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:20[0m
+2024-04-06 21:47:20,336: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:20,337: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:20,367: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:20,368: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:20,368: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:20,838: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:20,838: root: INFO: Current backtesting datetime 2020-01-13 16:00:00-05:00
+2024-04-06 21:47:20,839: root: INFO: Current backtesting datetime 2020-01-14 09:30:00-05:00
+2024-04-06 21:47:20,839: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:20[0m
+2024-04-06 21:47:20,839: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:20,840: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:20,869: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:20,869: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:20,869: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:21,079: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:21,080: root: INFO: Current backtesting datetime 2020-01-14 16:00:00-05:00
+2024-04-06 21:47:21,080: root: INFO: Current backtesting datetime 2020-01-15 09:30:00-05:00
+2024-04-06 21:47:21,081: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:21[0m
+2024-04-06 21:47:21,081: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:21,082: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:21,109: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:21,110: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:21,110: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:21,755: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:21,756: root: INFO: Current backtesting datetime 2020-01-15 16:00:00-05:00
+2024-04-06 21:47:21,756: root: INFO: Current backtesting datetime 2020-01-16 09:30:00-05:00
+2024-04-06 21:47:21,757: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:21[0m
+2024-04-06 21:47:21,757: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:21,758: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:21,787: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:21,788: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:21,788: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:22,013: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:22,014: root: INFO: Current backtesting datetime 2020-01-16 16:00:00-05:00
+2024-04-06 21:47:22,014: root: INFO: Current backtesting datetime 2020-01-17 09:30:00-05:00
+2024-04-06 21:47:22,014: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:22[0m
+2024-04-06 21:47:22,015: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:22,015: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:22,044: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:22,045: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:22,045: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:22,653: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:22,654: root: INFO: Current backtesting datetime 2020-01-17 16:00:00-05:00
+2024-04-06 21:47:22,654: root: INFO: Current backtesting datetime 2020-01-18 09:30:00-05:00
+2024-04-06 21:47:22,655: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:22,656: root: INFO: Current backtesting datetime 2020-01-18 09:29:00-05:00
+2024-04-06 21:47:22,657: root: INFO: Current backtesting datetime 2020-01-18 09:29:00-05:00
+2024-04-06 21:47:22,657: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:22,658: root: INFO: Current backtesting datetime 2020-01-21 08:30:00-05:00
+2024-04-06 21:47:22,659: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:22,660: root: INFO: Current backtesting datetime 2020-01-21 09:30:00-05:00
+2024-04-06 21:47:22,660: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:22,661: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:22[0m
+2024-04-06 21:47:22,661: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:22,662: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:22,688: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:22,689: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:22,689: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:22,922: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:22,923: root: INFO: Current backtesting datetime 2020-01-21 16:00:00-05:00
+2024-04-06 21:47:22,923: root: INFO: Current backtesting datetime 2020-01-22 09:30:00-05:00
+2024-04-06 21:47:22,924: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:22[0m
+2024-04-06 21:47:22,924: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:22,925: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:22,954: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:22,955: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:22,955: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:23,328: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:23,329: root: INFO: Current backtesting datetime 2020-01-22 16:00:00-05:00
+2024-04-06 21:47:23,329: root: INFO: Current backtesting datetime 2020-01-23 09:30:00-05:00
+2024-04-06 21:47:23,329: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:23[0m
+2024-04-06 21:47:23,330: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:23,331: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:23,360: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:23,360: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:23,360: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:23,776: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:23,777: root: INFO: Current backtesting datetime 2020-01-23 16:00:00-05:00
+2024-04-06 21:47:23,777: root: INFO: Current backtesting datetime 2020-01-24 09:30:00-05:00
+2024-04-06 21:47:23,778: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:23[0m
+2024-04-06 21:47:23,778: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:23,779: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:23,808: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:23,809: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:23,809: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:24,034: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:24,035: root: INFO: Current backtesting datetime 2020-01-24 16:00:00-05:00
+2024-04-06 21:47:24,035: root: INFO: Current backtesting datetime 2020-01-25 09:30:00-05:00
+2024-04-06 21:47:24,036: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:24,037: root: INFO: Current backtesting datetime 2020-01-25 09:29:00-05:00
+2024-04-06 21:47:24,038: root: INFO: Current backtesting datetime 2020-01-25 09:29:00-05:00
+2024-04-06 21:47:24,038: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:24,039: root: INFO: Current backtesting datetime 2020-01-27 08:30:00-05:00
+2024-04-06 21:47:24,040: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:24,040: root: INFO: Current backtesting datetime 2020-01-27 09:30:00-05:00
+2024-04-06 21:47:24,040: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:24,042: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:24[0m
+2024-04-06 21:47:24,042: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:24,043: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:24,072: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:24,072: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:24,072: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:24,632: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:24,633: root: INFO: Current backtesting datetime 2020-01-27 16:00:00-05:00
+2024-04-06 21:47:24,633: root: INFO: Current backtesting datetime 2020-01-28 09:30:00-05:00
+2024-04-06 21:47:24,633: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:24[0m
+2024-04-06 21:47:24,634: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:24,634: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:24,662: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:24,662: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:24,662: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:24,880: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:24,880: root: INFO: Current backtesting datetime 2020-01-28 16:00:00-05:00
+2024-04-06 21:47:24,880: root: INFO: Current backtesting datetime 2020-01-29 09:30:00-05:00
+2024-04-06 21:47:24,881: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:24[0m
+2024-04-06 21:47:24,881: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:24,882: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:24,912: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:24,912: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:24,912: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:25,374: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:25,375: root: INFO: Current backtesting datetime 2020-01-29 16:00:00-05:00
+2024-04-06 21:47:25,375: root: INFO: Current backtesting datetime 2020-01-30 09:30:00-05:00
+2024-04-06 21:47:25,376: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:25[0m
+2024-04-06 21:47:25,376: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:25,377: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:25,407: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:25,407: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:25,407: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:25,833: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:25,833: root: INFO: Current backtesting datetime 2020-01-30 16:00:00-05:00
+2024-04-06 21:47:25,834: root: INFO: Current backtesting datetime 2020-01-31 09:30:00-05:00
+2024-04-06 21:47:25,834: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:25[0m
+2024-04-06 21:47:25,834: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:25,835: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:25,863: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:25,864: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:25,864: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:26,085: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:26,086: root: INFO: Current backtesting datetime 2020-01-31 16:00:00-05:00
+2024-04-06 21:47:26,086: root: INFO: Current backtesting datetime 2020-02-01 09:30:00-05:00
+2024-04-06 21:47:26,086: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:26,088: root: INFO: Current backtesting datetime 2020-02-01 09:29:00-05:00
+2024-04-06 21:47:26,089: root: INFO: Current backtesting datetime 2020-02-01 09:29:00-05:00
+2024-04-06 21:47:26,089: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:26,090: root: INFO: Current backtesting datetime 2020-02-03 08:30:00-05:00
+2024-04-06 21:47:26,090: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:26,091: root: INFO: Current backtesting datetime 2020-02-03 09:30:00-05:00
+2024-04-06 21:47:26,091: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:26,092: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:26[0m
+2024-04-06 21:47:26,092: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:26,093: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:26,156: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:26,156: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:26,156: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:26,732: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:26,733: root: INFO: Current backtesting datetime 2020-02-03 16:00:00-05:00
+2024-04-06 21:47:26,733: root: INFO: Current backtesting datetime 2020-02-04 09:30:00-05:00
+2024-04-06 21:47:26,734: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:26[0m
+2024-04-06 21:47:26,734: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:26,735: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:26,770: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:26,770: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:26,770: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:26,981: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:26,982: root: INFO: Current backtesting datetime 2020-02-04 16:00:00-05:00
+2024-04-06 21:47:26,982: root: INFO: Current backtesting datetime 2020-02-05 09:30:00-05:00
+2024-04-06 21:47:26,983: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:26[0m
+2024-04-06 21:47:26,983: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:26,984: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:27,013: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:27,014: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:27,014: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:27,652: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:27,653: root: INFO: Current backtesting datetime 2020-02-05 16:00:00-05:00
+2024-04-06 21:47:27,653: root: INFO: Current backtesting datetime 2020-02-06 09:30:00-05:00
+2024-04-06 21:47:27,653: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:27[0m
+2024-04-06 21:47:27,653: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:27,654: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:27,684: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:27,684: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:27,684: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:27,892: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:27,893: root: INFO: Current backtesting datetime 2020-02-06 16:00:00-05:00
+2024-04-06 21:47:27,893: root: INFO: Current backtesting datetime 2020-02-07 09:30:00-05:00
+2024-04-06 21:47:27,894: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:27[0m
+2024-04-06 21:47:27,894: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:27,895: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:27,924: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:27,924: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:27,925: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:28,322: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:28,323: root: INFO: Current backtesting datetime 2020-02-07 16:00:00-05:00
+2024-04-06 21:47:28,324: root: INFO: Current backtesting datetime 2020-02-08 09:30:00-05:00
+2024-04-06 21:47:28,324: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:28,326: root: INFO: Current backtesting datetime 2020-02-08 09:29:00-05:00
+2024-04-06 21:47:28,327: root: INFO: Current backtesting datetime 2020-02-08 09:29:00-05:00
+2024-04-06 21:47:28,327: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:28,328: root: INFO: Current backtesting datetime 2020-02-10 08:30:00-05:00
+2024-04-06 21:47:28,329: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:28,330: root: INFO: Current backtesting datetime 2020-02-10 09:30:00-05:00
+2024-04-06 21:47:28,330: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:28,331: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:28[0m
+2024-04-06 21:47:28,331: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:28,332: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:28,363: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:28,363: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:28,363: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:28,790: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:28,790: root: INFO: Current backtesting datetime 2020-02-10 16:00:00-05:00
+2024-04-06 21:47:28,791: root: INFO: Current backtesting datetime 2020-02-11 09:30:00-05:00
+2024-04-06 21:47:28,791: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:28[0m
+2024-04-06 21:47:28,791: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:28,792: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:28,820: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:28,820: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:28,820: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:29,044: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:29,044: root: INFO: Current backtesting datetime 2020-02-11 16:00:00-05:00
+2024-04-06 21:47:29,045: root: INFO: Current backtesting datetime 2020-02-12 09:30:00-05:00
+2024-04-06 21:47:29,045: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:29[0m
+2024-04-06 21:47:29,045: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:29,046: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:29,078: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:29,078: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:29,078: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:29,725: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:29,726: root: INFO: Current backtesting datetime 2020-02-12 16:00:00-05:00
+2024-04-06 21:47:29,726: root: INFO: Current backtesting datetime 2020-02-13 09:30:00-05:00
+2024-04-06 21:47:29,726: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:29[0m
+2024-04-06 21:47:29,727: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:29,728: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:29,756: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:29,756: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:29,756: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:29,980: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:29,981: root: INFO: Current backtesting datetime 2020-02-13 16:00:00-05:00
+2024-04-06 21:47:29,981: root: INFO: Current backtesting datetime 2020-02-14 09:30:00-05:00
+2024-04-06 21:47:29,981: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:29[0m
+2024-04-06 21:47:29,981: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:29,982: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:30,009: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:30,010: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:30,010: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:30,558: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:30,559: root: INFO: Current backtesting datetime 2020-02-14 16:00:00-05:00
+2024-04-06 21:47:30,559: root: INFO: Current backtesting datetime 2020-02-15 09:30:00-05:00
+2024-04-06 21:47:30,559: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:30,561: root: INFO: Current backtesting datetime 2020-02-15 09:29:00-05:00
+2024-04-06 21:47:30,562: root: INFO: Current backtesting datetime 2020-02-15 09:29:00-05:00
+2024-04-06 21:47:30,562: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:30,563: root: INFO: Current backtesting datetime 2020-02-18 08:30:00-05:00
+2024-04-06 21:47:30,563: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:30,564: root: INFO: Current backtesting datetime 2020-02-18 09:30:00-05:00
+2024-04-06 21:47:30,564: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:30,565: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:30[0m
+2024-04-06 21:47:30,565: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:30,566: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:30,597: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:30,597: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:30,597: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:30,808: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:30,808: root: INFO: Current backtesting datetime 2020-02-18 16:00:00-05:00
+2024-04-06 21:47:30,809: root: INFO: Current backtesting datetime 2020-02-19 09:30:00-05:00
+2024-04-06 21:47:30,809: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:30[0m
+2024-04-06 21:47:30,809: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:30,810: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:30,840: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:30,841: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:30,841: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:31,057: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:31,058: root: INFO: Current backtesting datetime 2020-02-19 16:00:00-05:00
+2024-04-06 21:47:31,058: root: INFO: Current backtesting datetime 2020-02-20 09:30:00-05:00
+2024-04-06 21:47:31,058: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:31[0m
+2024-04-06 21:47:31,058: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:31,059: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:31,088: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:31,089: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:31,089: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:31,707: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:31,708: root: INFO: Current backtesting datetime 2020-02-20 16:00:00-05:00
+2024-04-06 21:47:31,708: root: INFO: Current backtesting datetime 2020-02-21 09:30:00-05:00
+2024-04-06 21:47:31,708: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:31[0m
+2024-04-06 21:47:31,708: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:31,709: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:31,736: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:31,736: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:31,736: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:32,002: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:32,003: root: INFO: Current backtesting datetime 2020-02-21 16:00:00-05:00
+2024-04-06 21:47:32,003: root: INFO: Current backtesting datetime 2020-02-22 09:30:00-05:00
+2024-04-06 21:47:32,004: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:32,005: root: INFO: Current backtesting datetime 2020-02-22 09:29:00-05:00
+2024-04-06 21:47:32,007: root: INFO: Current backtesting datetime 2020-02-22 09:29:00-05:00
+2024-04-06 21:47:32,007: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:32,008: root: INFO: Current backtesting datetime 2020-02-24 08:30:00-05:00
+2024-04-06 21:47:32,008: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:32,010: root: INFO: Current backtesting datetime 2020-02-24 09:30:00-05:00
+2024-04-06 21:47:32,010: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:32,011: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:32[0m
+2024-04-06 21:47:32,011: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:32,012: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:32,043: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:32,043: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:32,043: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:32,821: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:32,822: root: INFO: Current backtesting datetime 2020-02-24 16:00:00-05:00
+2024-04-06 21:47:32,822: root: INFO: Current backtesting datetime 2020-02-25 09:30:00-05:00
+2024-04-06 21:47:32,823: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:32[0m
+2024-04-06 21:47:32,823: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:32,824: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:32,854: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:32,854: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:32,854: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:33,075: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:33,076: root: INFO: Current backtesting datetime 2020-02-25 16:00:00-05:00
+2024-04-06 21:47:33,076: root: INFO: Current backtesting datetime 2020-02-26 09:30:00-05:00
+2024-04-06 21:47:33,076: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:33[0m
+2024-04-06 21:47:33,077: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:33,077: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:33,108: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:33,108: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:33,108: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:33,758: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:33,759: root: INFO: Current backtesting datetime 2020-02-26 16:00:00-05:00
+2024-04-06 21:47:33,759: root: INFO: Current backtesting datetime 2020-02-27 09:30:00-05:00
+2024-04-06 21:47:33,759: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:33[0m
+2024-04-06 21:47:33,760: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:33,760: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:33,791: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:33,791: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:33,791: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:34,020: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:34,021: root: INFO: Current backtesting datetime 2020-02-27 16:00:00-05:00
+2024-04-06 21:47:34,021: root: INFO: Current backtesting datetime 2020-02-28 09:30:00-05:00
+2024-04-06 21:47:34,022: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:34[0m
+2024-04-06 21:47:34,022: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:34,023: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:34,050: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:34,051: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:34,051: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:34,661: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:34,662: root: INFO: Current backtesting datetime 2020-02-28 16:00:00-05:00
+2024-04-06 21:47:34,662: root: INFO: Current backtesting datetime 2020-02-29 09:30:00-05:00
+2024-04-06 21:47:34,662: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:34,664: root: INFO: Current backtesting datetime 2020-02-29 09:29:00-05:00
+2024-04-06 21:47:34,665: root: INFO: Current backtesting datetime 2020-02-29 09:29:00-05:00
+2024-04-06 21:47:34,665: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:34,666: root: INFO: Current backtesting datetime 2020-03-02 08:30:00-05:00
+2024-04-06 21:47:34,666: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:34,667: root: INFO: Current backtesting datetime 2020-03-02 09:30:00-05:00
+2024-04-06 21:47:34,667: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:34,668: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:34[0m
+2024-04-06 21:47:34,668: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:34,669: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:34,697: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:34,697: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:34,697: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:34,931: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:34,932: root: INFO: Current backtesting datetime 2020-03-02 16:00:00-05:00
+2024-04-06 21:47:34,932: root: INFO: Current backtesting datetime 2020-03-03 09:30:00-05:00
+2024-04-06 21:47:34,932: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:34[0m
+2024-04-06 21:47:34,932: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:34,933: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:34,964: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:34,964: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:34,964: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:35,373: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:35,374: root: INFO: Current backtesting datetime 2020-03-03 16:00:00-05:00
+2024-04-06 21:47:35,374: root: INFO: Current backtesting datetime 2020-03-04 09:30:00-05:00
+2024-04-06 21:47:35,375: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:35[0m
+2024-04-06 21:47:35,375: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:35,375: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:35,402: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:35,403: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:35,403: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:35,895: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:35,895: root: INFO: Current backtesting datetime 2020-03-04 16:00:00-05:00
+2024-04-06 21:47:35,896: root: INFO: Current backtesting datetime 2020-03-05 09:30:00-05:00
+2024-04-06 21:47:35,896: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:35[0m
+2024-04-06 21:47:35,896: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:35,897: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:35,925: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:35,926: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:35,926: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:36,328: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:36,329: root: INFO: Current backtesting datetime 2020-03-05 16:00:00-05:00
+2024-04-06 21:47:36,329: root: INFO: Current backtesting datetime 2020-03-06 09:30:00-05:00
+2024-04-06 21:47:36,329: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:36[0m
+2024-04-06 21:47:36,329: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:36,330: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:36,360: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:36,360: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:36,360: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:36,910: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:36,911: root: INFO: Current backtesting datetime 2020-03-06 16:00:00-05:00
+2024-04-06 21:47:36,911: root: INFO: Current backtesting datetime 2020-03-07 09:30:00-05:00
+2024-04-06 21:47:36,912: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:36,914: root: INFO: Current backtesting datetime 2020-03-07 09:29:00-05:00
+2024-04-06 21:47:36,915: root: INFO: Current backtesting datetime 2020-03-07 09:29:00-05:00
+2024-04-06 21:47:36,915: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:36,916: root: INFO: Current backtesting datetime 2020-03-09 07:30:00-05:00
+2024-04-06 21:47:36,917: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:36,918: root: INFO: Current backtesting datetime 2020-03-09 08:30:00-05:00
+2024-04-06 21:47:36,918: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:36,919: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:36[0m
+2024-04-06 21:47:36,919: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:36,920: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:36,949: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:36,950: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:36,950: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:37,376: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:37,377: root: INFO: Current backtesting datetime 2020-03-09 15:00:00-05:00
+2024-04-06 21:47:37,377: root: INFO: Current backtesting datetime 2020-03-10 08:30:00-05:00
+2024-04-06 21:47:37,378: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:37[0m
+2024-04-06 21:47:37,378: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:37,379: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:37,408: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:37,409: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:37,409: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:37,874: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:37,875: root: INFO: Current backtesting datetime 2020-03-10 15:00:00-05:00
+2024-04-06 21:47:37,875: root: INFO: Current backtesting datetime 2020-03-11 08:30:00-05:00
+2024-04-06 21:47:37,875: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:37[0m
+2024-04-06 21:47:37,876: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:37,876: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:37,906: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:37,907: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:37,907: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:38,307: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:38,308: root: INFO: Current backtesting datetime 2020-03-11 15:00:00-05:00
+2024-04-06 21:47:38,308: root: INFO: Current backtesting datetime 2020-03-12 08:30:00-05:00
+2024-04-06 21:47:38,308: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:38[0m
+2024-04-06 21:47:38,308: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:38,309: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:38,338: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:38,339: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:38,339: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:38,810: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:38,811: root: INFO: Current backtesting datetime 2020-03-12 15:00:00-05:00
+2024-04-06 21:47:38,811: root: INFO: Current backtesting datetime 2020-03-13 08:30:00-05:00
+2024-04-06 21:47:38,811: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:38[0m
+2024-04-06 21:47:38,812: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:38,812: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:38,841: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:38,842: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:38,842: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:39,059: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:39,060: root: INFO: Current backtesting datetime 2020-03-13 15:00:00-05:00
+2024-04-06 21:47:39,060: root: INFO: Current backtesting datetime 2020-03-14 08:30:00-05:00
+2024-04-06 21:47:39,060: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:39,062: root: INFO: Current backtesting datetime 2020-03-14 08:29:00-05:00
+2024-04-06 21:47:39,063: root: INFO: Current backtesting datetime 2020-03-14 08:29:00-05:00
+2024-04-06 21:47:39,063: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:39,064: root: INFO: Current backtesting datetime 2020-03-16 07:30:00-05:00
+2024-04-06 21:47:39,064: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:39,065: root: INFO: Current backtesting datetime 2020-03-16 08:30:00-05:00
+2024-04-06 21:47:39,065: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:39,066: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:39[0m
+2024-04-06 21:47:39,066: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:39,067: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:39,096: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:39,096: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:39,096: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:39,638: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:39,639: root: INFO: Current backtesting datetime 2020-03-16 15:00:00-05:00
+2024-04-06 21:47:39,639: root: INFO: Current backtesting datetime 2020-03-17 08:30:00-05:00
+2024-04-06 21:47:39,639: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:39[0m
+2024-04-06 21:47:39,639: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:39,640: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:39,667: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:39,667: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:39,667: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:39,912: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:39,913: root: INFO: Current backtesting datetime 2020-03-17 15:00:00-05:00
+2024-04-06 21:47:39,913: root: INFO: Current backtesting datetime 2020-03-18 08:30:00-05:00
+2024-04-06 21:47:39,914: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:39[0m
+2024-04-06 21:47:39,914: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:39,915: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:39,943: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:39,943: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:39,943: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:40,343: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:40,343: root: INFO: Current backtesting datetime 2020-03-18 15:00:00-05:00
+2024-04-06 21:47:40,344: root: INFO: Current backtesting datetime 2020-03-19 08:30:00-05:00
+2024-04-06 21:47:40,344: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:40[0m
+2024-04-06 21:47:40,344: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:40,345: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:40,372: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:40,373: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:40,373: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:40,833: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:40,833: root: INFO: Current backtesting datetime 2020-03-19 15:00:00-05:00
+2024-04-06 21:47:40,834: root: INFO: Current backtesting datetime 2020-03-20 08:30:00-05:00
+2024-04-06 21:47:40,834: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:40[0m
+2024-04-06 21:47:40,834: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:40,835: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:40,866: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:40,867: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:40,867: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:41,175: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:41,176: root: INFO: Current backtesting datetime 2020-03-20 15:00:00-05:00
+2024-04-06 21:47:41,176: root: INFO: Current backtesting datetime 2020-03-21 08:30:00-05:00
+2024-04-06 21:47:41,177: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:41,178: root: INFO: Current backtesting datetime 2020-03-21 08:29:00-05:00
+2024-04-06 21:47:41,180: root: INFO: Current backtesting datetime 2020-03-21 08:29:00-05:00
+2024-04-06 21:47:41,180: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:41,181: root: INFO: Current backtesting datetime 2020-03-23 07:30:00-05:00
+2024-04-06 21:47:41,181: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:41,182: root: INFO: Current backtesting datetime 2020-03-23 08:30:00-05:00
+2024-04-06 21:47:41,182: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:41,184: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:41[0m
+2024-04-06 21:47:41,184: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:41,185: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:41,214: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:41,215: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:41,215: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:41,861: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:41,862: root: INFO: Current backtesting datetime 2020-03-23 15:00:00-05:00
+2024-04-06 21:47:41,862: root: INFO: Current backtesting datetime 2020-03-24 08:30:00-05:00
+2024-04-06 21:47:41,863: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:41[0m
+2024-04-06 21:47:41,863: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:41,864: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:41,891: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:41,891: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:41,891: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:42,268: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:42,269: root: INFO: Current backtesting datetime 2020-03-24 15:00:00-05:00
+2024-04-06 21:47:42,269: root: INFO: Current backtesting datetime 2020-03-25 08:30:00-05:00
+2024-04-06 21:47:42,269: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:42[0m
+2024-04-06 21:47:42,269: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:42,270: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:42,297: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:42,298: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:42,298: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:42,687: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:42,688: root: INFO: Current backtesting datetime 2020-03-25 15:00:00-05:00
+2024-04-06 21:47:42,688: root: INFO: Current backtesting datetime 2020-03-26 08:30:00-05:00
+2024-04-06 21:47:42,689: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:42[0m
+2024-04-06 21:47:42,689: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:42,690: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:42,716: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:42,717: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:42,717: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:42,932: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:42,933: root: INFO: Current backtesting datetime 2020-03-26 15:00:00-05:00
+2024-04-06 21:47:42,933: root: INFO: Current backtesting datetime 2020-03-27 08:30:00-05:00
+2024-04-06 21:47:42,933: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:42[0m
+2024-04-06 21:47:42,933: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:42,934: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:42,964: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:42,965: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:42,965: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:43,327: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:43,328: root: INFO: Current backtesting datetime 2020-03-27 15:00:00-05:00
+2024-04-06 21:47:43,328: root: INFO: Current backtesting datetime 2020-03-28 08:30:00-05:00
+2024-04-06 21:47:43,329: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:43,330: root: INFO: Current backtesting datetime 2020-03-28 08:29:00-05:00
+2024-04-06 21:47:43,331: root: INFO: Current backtesting datetime 2020-03-28 08:29:00-05:00
+2024-04-06 21:47:43,331: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:43,332: root: INFO: Current backtesting datetime 2020-03-30 07:30:00-05:00
+2024-04-06 21:47:43,333: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:43,333: root: INFO: Current backtesting datetime 2020-03-30 08:30:00-05:00
+2024-04-06 21:47:43,333: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:43,334: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:43[0m
+2024-04-06 21:47:43,335: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:43,336: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:43,367: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:43,367: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:43,367: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:43,804: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:43,805: root: INFO: Current backtesting datetime 2020-03-30 15:00:00-05:00
+2024-04-06 21:47:43,805: root: INFO: Current backtesting datetime 2020-03-31 08:30:00-05:00
+2024-04-06 21:47:43,806: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:43[0m
+2024-04-06 21:47:43,806: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:43,807: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:43,834: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:43,835: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:43,835: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:44,342: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:44,343: root: INFO: Current backtesting datetime 2020-03-31 15:00:00-05:00
+2024-04-06 21:47:44,343: root: INFO: Current backtesting datetime 2020-04-01 08:30:00-05:00
+2024-04-06 21:47:44,344: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:44[0m
+2024-04-06 21:47:44,344: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:44,345: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:44,372: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:44,372: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:44,373: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:44,848: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:44,849: root: INFO: Current backtesting datetime 2020-04-01 15:00:00-05:00
+2024-04-06 21:47:44,849: root: INFO: Current backtesting datetime 2020-04-02 08:30:00-05:00
+2024-04-06 21:47:44,850: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:44[0m
+2024-04-06 21:47:44,850: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:44,851: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:44,879: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:44,879: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:44,879: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:45,291: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:45,292: root: INFO: Current backtesting datetime 2020-04-02 15:00:00-05:00
+2024-04-06 21:47:45,292: root: INFO: Current backtesting datetime 2020-04-03 08:30:00-05:00
+2024-04-06 21:47:45,293: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:45[0m
+2024-04-06 21:47:45,293: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:45,294: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:45,322: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:45,323: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:45,323: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:45,769: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:45,770: root: INFO: Current backtesting datetime 2020-04-03 15:00:00-05:00
+2024-04-06 21:47:45,770: root: INFO: Current backtesting datetime 2020-04-04 08:30:00-05:00
+2024-04-06 21:47:45,771: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:45,772: root: INFO: Current backtesting datetime 2020-04-04 08:29:00-05:00
+2024-04-06 21:47:45,773: root: INFO: Current backtesting datetime 2020-04-04 08:29:00-05:00
+2024-04-06 21:47:45,773: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:45,774: root: INFO: Current backtesting datetime 2020-04-06 07:30:00-05:00
+2024-04-06 21:47:45,775: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:45,775: root: INFO: Current backtesting datetime 2020-04-06 08:30:00-05:00
+2024-04-06 21:47:45,775: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:45,777: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:45[0m
+2024-04-06 21:47:45,777: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:45,778: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:45,806: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:45,807: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:45,807: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:46,027: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:46,028: root: INFO: Current backtesting datetime 2020-04-06 15:00:00-05:00
+2024-04-06 21:47:46,028: root: INFO: Current backtesting datetime 2020-04-07 08:30:00-05:00
+2024-04-06 21:47:46,028: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:46[0m
+2024-04-06 21:47:46,029: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:46,029: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:46,060: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:46,061: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:46,061: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:46,697: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:46,698: root: INFO: Current backtesting datetime 2020-04-07 15:00:00-05:00
+2024-04-06 21:47:46,698: root: INFO: Current backtesting datetime 2020-04-08 08:30:00-05:00
+2024-04-06 21:47:46,698: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:46[0m
+2024-04-06 21:47:46,698: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:46,699: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:46,727: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:46,727: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:46,727: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:46,961: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:46,962: root: INFO: Current backtesting datetime 2020-04-08 15:00:00-05:00
+2024-04-06 21:47:46,962: root: INFO: Current backtesting datetime 2020-04-09 08:30:00-05:00
+2024-04-06 21:47:46,963: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:46[0m
+2024-04-06 21:47:46,963: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:46,964: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:46,992: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:46,992: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:46,993: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:47,385: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:47,385: root: INFO: Current backtesting datetime 2020-04-09 15:00:00-05:00
+2024-04-06 21:47:47,386: root: INFO: Current backtesting datetime 2020-04-10 08:30:00-05:00
+2024-04-06 21:47:47,386: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:47,387: root: INFO: Current backtesting datetime 2020-04-10 08:29:00-05:00
+2024-04-06 21:47:47,389: root: INFO: Current backtesting datetime 2020-04-10 08:29:00-05:00
+2024-04-06 21:47:47,389: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:47,389: root: INFO: Current backtesting datetime 2020-04-13 07:30:00-05:00
+2024-04-06 21:47:47,390: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:47,391: root: INFO: Current backtesting datetime 2020-04-13 08:30:00-05:00
+2024-04-06 21:47:47,391: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:47,392: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:47[0m
+2024-04-06 21:47:47,392: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:47,393: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:47,423: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:47,423: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:47,423: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:47,894: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:47,895: root: INFO: Current backtesting datetime 2020-04-13 15:00:00-05:00
+2024-04-06 21:47:47,895: root: INFO: Current backtesting datetime 2020-04-14 08:30:00-05:00
+2024-04-06 21:47:47,895: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:47[0m
+2024-04-06 21:47:47,895: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:47,896: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:47,927: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:47,927: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:47,927: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:48,392: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:48,393: root: INFO: Current backtesting datetime 2020-04-14 15:00:00-05:00
+2024-04-06 21:47:48,393: root: INFO: Current backtesting datetime 2020-04-15 08:30:00-05:00
+2024-04-06 21:47:48,394: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:48[0m
+2024-04-06 21:47:48,394: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:48,395: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:48,424: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:48,424: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:48,424: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:48,856: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:48,856: root: INFO: Current backtesting datetime 2020-04-15 15:00:00-05:00
+2024-04-06 21:47:48,857: root: INFO: Current backtesting datetime 2020-04-16 08:30:00-05:00
+2024-04-06 21:47:48,857: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:48[0m
+2024-04-06 21:47:48,857: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:48,858: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:48,888: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:48,889: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:48,889: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:49,299: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:49,300: root: INFO: Current backtesting datetime 2020-04-16 15:00:00-05:00
+2024-04-06 21:47:49,300: root: INFO: Current backtesting datetime 2020-04-17 08:30:00-05:00
+2024-04-06 21:47:49,301: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:49[0m
+2024-04-06 21:47:49,301: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:49,302: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:49,330: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:49,331: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:49,331: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:49,750: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:49,751: root: INFO: Current backtesting datetime 2020-04-17 15:00:00-05:00
+2024-04-06 21:47:49,751: root: INFO: Current backtesting datetime 2020-04-18 08:30:00-05:00
+2024-04-06 21:47:49,752: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-04-06 21:47:49,753: root: INFO: Current backtesting datetime 2020-04-18 08:29:00-05:00
+2024-04-06 21:47:49,754: root: INFO: Current backtesting datetime 2020-04-18 08:29:00-05:00
+2024-04-06 21:47:49,754: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-04-06 21:47:49,755: root: INFO: Current backtesting datetime 2020-04-20 07:30:00-05:00
+2024-04-06 21:47:49,756: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-04-06 21:47:49,756: root: INFO: Current backtesting datetime 2020-04-20 08:30:00-05:00
+2024-04-06 21:47:49,756: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-04-06 21:47:49,758: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:49[0m
+2024-04-06 21:47:49,758: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:49,759: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:49,786: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:49,787: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:49,787: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:50,002: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:50,003: root: INFO: Current backtesting datetime 2020-04-20 15:00:00-05:00
+2024-04-06 21:47:50,003: root: INFO: Current backtesting datetime 2020-04-21 08:30:00-05:00
+2024-04-06 21:47:50,003: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:50[0m
+2024-04-06 21:47:50,004: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:50,004: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:50,035: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:50,036: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:50,036: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:50,584: asyncio: INFO: [MLTrader] [34mSleeping for 86400 seconds[0m
+2024-04-06 21:47:50,584: root: INFO: Current backtesting datetime 2020-04-21 15:00:00-05:00
+2024-04-06 21:47:50,585: root: INFO: Current backtesting datetime 2020-04-22 08:30:00-05:00
+2024-04-06 21:47:50,585: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-04-06 21:47:50[0m
+2024-04-06 21:47:50,585: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:50,586: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-04-06 21:47:50,616: asyncio: INFO: [MLTrader] [31mAn error occurred during the on_trading_iteration lifecycle method: name 'estimate_sentiment' is not defined[0m
+2024-04-06 21:47:50,617: asyncio: INFO: [MLTrader] [31mTraceback (most recent call last):
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/strategies/strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/anaconda3/lib/python3.11/site-packages/lumibot/tools/decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 121, in on_trading_iteration
+    probability, sentiment = self.get_sentiment()
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthewhaines/z_code/tradebot/tradingbot.py", line 116, in get_sentiment
+    probability, sentiment = estimate_sentiment(news)
+                             ^^^^^^^^^^^^^^^^^^
+NameError: name 'estimate_sentiment' is not defined
+[0m
+2024-04-06 21:47:50,617: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-04-06 21:47:50,751: asyncio: INFO: [MLTrader] Executing the on_abrupt_closing event method
+2024-04-06 21:47:50,835: root: INFO: Current backtesting datetime 2020-04-22 14:59:00-05:00
+2024-04-06 21:47:50,836: root: INFO: Current backtesting datetime 2020-04-22 15:00:00-05:00
+2024-04-06 21:47:51,446: root: INFO: Trading finished
+2024-04-06 21:47:51,447: root: INFO: Backtesting finished
+2024-04-06 21:47:51,805: root: INFO: There were no trades in this backtest.
+2024-04-06 21:47:51,998: root: ERROR: Not enough data to create a tearsheet, at least 2 days of data are required. Skipping
+2024-04-06 21:47:51,999: backtest_stats: INFO: Backtest took 0:00:35.975481 for a speed of 0.000
